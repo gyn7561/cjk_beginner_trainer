@@ -71,7 +71,7 @@ export default function (props) {
     function onInput(e) {
         let value = e.target.value;
         setInput(value);
-        if (romanize(char) === value) {
+        if (romanize(char).toLowerCase() === value.toLowerCase()) {
             init();
         }
     }
