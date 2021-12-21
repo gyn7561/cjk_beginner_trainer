@@ -9,7 +9,8 @@ import { FormControl, InputLabel, OutlinedInput } from "@material-ui/core";
 import hangul from "./hangul";
 import kana from "./kana";
 import * as Hangul from 'hangul-js';
-let lv1Hanja = require("./data/lv1.json");
+let lv1 = require("./data/lv1.json");
+let lv1Hanja = lv1.allChineseChar;
 let hanjaMap = require("./data/hanja.json");
 
 const useStyles = makeStyles(theme => ({
@@ -29,6 +30,7 @@ export default function (props) {
     const [input, setInput] = React.useState("");
     const [options, setOptions] = React.useState([]);
     const [showLatin, setShowLatin] = React.useState(false);
+    const [charWords, setCharWords] = React.useState([]);
 
     useEffect(() => {
         init();
@@ -73,13 +75,26 @@ export default function (props) {
         }
     }
 
+    function findCharWords(char) {
+        let result = [];
+        for (const word in lv1.words) {
+            let cn = lv1.words[word];
+            if (cn.indexOf(char) !== -1) {
+                result.push({ word, cn });
+            }
+        }
+        return result;
+    }
+
     function init() {
         let char = randomChar();
         setInput("");
         setChar(char);
+
+        setCharWords(findCharWords(char));
+
         randomAnsers(char);
         setShowLatin(false);
-
     }
 
     function randomAnsers(char) {
@@ -132,11 +147,15 @@ export default function (props) {
         setOptions(JSON.parse(JSON.stringify(options)));
     }
 
-
     return <Card>
         <CardContent>
             <Typography align="center" className={classes.root}>
                 {char}
+                <div style={{ fontSize: 14 }}>
+                    {charWords.map(w => <span>
+                        {w.cn}({w.word})
+                    </span>)}
+                </div>
                 {showLatin && <span>-{romanize(char)}
                     {showLatin && renderDetail()}
                 </span>}
