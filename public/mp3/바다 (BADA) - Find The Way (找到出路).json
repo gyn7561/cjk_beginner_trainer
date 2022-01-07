@@ -1,0 +1,172 @@
+{
+    "language": [
+        "kr"
+    ],
+    "remarks": {
+        "1": [
+            {
+                "word": "그대",
+                "remark": "你[书面语]"
+            },
+            {
+                "word": "는",
+                "remark": "主题助词 同は"
+            },
+            {
+                "word": "나",
+                "remark": "我",
+                "url": "https://www.kanchoa.com/joshi/"
+            },
+            {
+                "word": "에게",
+                "remark": "～に(人)",
+                "url": "https://www.kanchoa.com/joshi/"
+            },
+            {
+                "word": "소중하다",
+                "origin": "所重하다",
+                "remark": "【動詞】過去形の連体形 【形容詞】現在形の連体形",
+                "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10237763030?fr=sc_scdd&__ysp=7ZWY64ukIO2VnA%3D%3D"
+            },
+            {
+                "word": "사람",
+                "remark": "人"
+            }
+        ],
+        "2": [
+            {
+                "word": "새벽",
+                "remark": "黎明 拂晓"
+            },
+            {
+                "word": "첫눈",
+                "remark": "初雪"
+            },
+            {
+                "word": "처럼",
+                "remark": "表示像 ように、みたいに"
+            },
+            {
+                "word": "눈부시다",
+                "remark": "耀眼 闪耀 眩しい 冠形词型 形容词词干根据有无收音+ -은/ㄴ即可修饰名词",
+                "url": "https://kr.hujiang.com/new/p1342148/"
+            },
+            {
+                "word": "사람",
+                "remark": "人"
+            }
+        ],
+        "3": [
+            {
+                "word": "이기적",
+                "origin": "利己的",
+                "remark": "自私"
+            },
+            {
+                "word": "인",
+                "remark": "连体助词 ～の、～である",
+                "url": "http://kjk-gakuin.com/28-%EF%BC%8D%EC%9D%B8%E3%80%8C%E5%90%8D%E8%A9%9E%E3%83%BB%E6%8C%87%E5%AE%9A%E8%A9%9E%E3%81%AE%E7%8F%BE%E5%9C%A8%E9%80%A3%E4%BD%93%E5%BD%A2%E3%80%8D/"
+            },
+            {
+                "word": "나",
+                "remark": "我",
+                "url": "https://www.kanchoa.com/joshi/"
+            },
+            {
+                "word": "를",
+                "remark": "을/를 宾格的格词尾 を"
+            },
+            {
+                "word": "용서하다",
+                "origin": "容恕하다",
+                "remark": "礼貌形 变形 해요",
+                "url": "https://kvillage.jp/column/99200"
+            }
+        ],
+        "4": [
+            {
+                "word": "이제",
+                "remark": "现在"
+            },
+            {
+                "word": "는",
+                "remark": "主题助词 同は"
+            },
+            {
+                "word": "알다",
+                "remark": "知道"
+            },
+            {
+                "word": "것",
+                "remark": "依存名词"
+            },
+            {
+                "word": "같다",
+                "remark": "用于名词或“것”后面，表示好像、可能、像"
+            }
+        ],
+        "5": [
+            {
+                "word": "바보",
+                "remark": "傻瓜"
+            },
+            {
+                "word": "같다",
+                "remark": "形容词‘같다’的活用形修饰后面名词或名词短语"
+            },
+            {
+                "word": "욕심",
+                "origin": "欲心",
+                "remark": "贪心"
+            },
+            {
+                "word": "모두",
+                "remark": "都、一起"
+            },
+            {
+                "word": "다",
+                "remark": "都"
+            },
+            {
+                "word": "모두 다",
+                "remark": "全都"
+            },
+            {
+                "word": "버리다",
+                "remark": "1.扔2.离开；抛弃3.放弃；放下4.改掉；摒弃  고连接形 词干直接加고"
+            }
+        ],
+        "6": [
+            {
+                "word": "그대",
+                "remark": "你[书面语]"
+            },
+            {
+                "word": "앞",
+                "remark": "前面  ↔뒤"
+            },
+            {
+                "word": "에",
+                "remark": "助词 に"
+            },
+            {
+                "word": "다시",
+                "remark": "再"
+            },
+            {
+                "word": "기대다",
+                "remark": "1.倚靠2.依靠"
+            },
+            {
+                "word": "앉다",
+                "remark": "坐下、停、落"
+            }
+        ],
+        "18": [
+            {
+                "word": "후회",
+                "origin": "後悔"
+            }
+        ]
+    }
+}

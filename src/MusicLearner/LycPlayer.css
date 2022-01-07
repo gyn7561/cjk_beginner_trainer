@@ -1,0 +1,76 @@
+.lyc-wrap {
+    text-align: center;
+    max-height: 100%;
+    width: 100%;
+    float: left;
+    overflow-y: scroll;
+}
+
+.lyc-wrap .lyc {
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.lyc-wrap .lyc.blank {
+    cursor: default;
+    height: 500px;
+}
+
+.lyc-wrap .lyc[diff='0'] {
+    color: red;
+}
+
+.remark-wrap {}
+
+.remark-detail {}
+
+.lyc-page {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.lyc-content {
+
+    position: absolute;
+    bottom: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.remark-cotent {
+    height: 200px;
+    overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+}
+
+.remark-wrap {
+    /* border-top: 1px solid red; */
+}
+
+.remark-detail {
+    color: #333;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    border-top: 1px solid gray;
+}
+
+
+.remark-detail .origin{
+    padding-left: 10px;
+    color: blue;
+}
+.remark-detail .remark{
+    padding-left: 10px;
+    color: #333;
+} 
