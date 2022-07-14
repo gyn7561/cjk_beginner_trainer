@@ -1,13 +1,14 @@
 import React from 'react';
 import CharCardV2 from './CharCardV2';
 import { Button } from '@material-ui/core';
-import MusicLearner from './MusicLearner/MusicLearner'; 
+import MusicLearner from './MusicLearner/MusicLearner';
 import {
   HashRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import Typing from './Typing/Typing';
 
 function App() {
   // let [charSet, setCharSet] = React.useState(null);
@@ -53,6 +54,9 @@ function App() {
         <Route path="/music">
           <MusicLearner />
         </Route>
+        <Route path="/typing">
+          <Typing />
+        </Route>
         <Route path="/">
           <nav>
             <ul>
@@ -70,6 +74,9 @@ function App() {
               </li>
               <li>
                 <Link to="/music">MUSIC</Link>
+              </li>
+              <li>
+                <Link to="/typing">打字训练</Link>
               </li>
             </ul>
           </nav>
