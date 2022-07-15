@@ -1,6 +1,7 @@
 import React from "react";
 import * as Hangul from 'hangul-js';
 import Keyboard from 'react-simple-keyboard';
+import {Helmet} from "react-helmet";
 import 'react-simple-keyboard/build/css/index.css';
 import useLocalStorage from "../useStorage";
 let Aromanize = require("aromanize");
@@ -162,12 +163,20 @@ export default function () {
     let hanja = word ? lv1.words[word.name] : "";
     let roma = Aromanize.romanize(word?.name || "");
     return <div>
+        <Helmet>
+            <title>打字训练</title>
+        </Helmet>
         {
             word && <div>
                 <p style={{ textAlign: "center", fontSize: 20 }}> 今日计数:{todayCount} 总计数:{allCount}</p>
-                <h2 style={{ textAlign: "center", fontSize: 55 }} onClick={playAudio}>{word.name} {hanja && `[${hanja}]`}</h2>
-                <h4 style={{ textAlign: "center", fontSize: 45 }} onClick={playAudio}>{roma}</h4>
-                <p style={{ textAlign: "center", fontSize: 20 }}><a href={`https://korean.dict.naver.com/kozhdict/#/search?query=${encodeURIComponent(word.name)}`} target="_blank">查询</a> {word.means}</p>
+                <h2 style={{ textAlign: "center", fontSize: 55 , padding: 0, margin: 40}} onClick={playAudio}>{word.name} {hanja && `[${hanja}]`}</h2>
+                <h4 style={{ textAlign: "center", fontSize: 45, padding: 0, margin: 20 }} onClick={playAudio}>{roma}</h4>
+                <div style={{ textAlign: "center", fontSize: 15, padding: 0, margin: 0 }}>
+                    查询:&nbsp;&nbsp;<a href={`https://korean.dict.naver.com/kozhdict/#/search?query=${encodeURIComponent(word.name)}`} target="_blank">NAVER MOBILE</a>&nbsp;&nbsp;
+                    <a href={`https://zh.dict.naver.com/#/search?query=${encodeURIComponent(word.name)}`} target="_blank">NAVER PC</a>
+                </div>
+                <p style={{ textAlign: "center", fontSize: 20 }}>
+                    {word.means}</p>
 
                 <div style={{ textAlign: "center", fontSize: 20 }}>
                     {
